@@ -262,6 +262,11 @@ int SimpleEstimator::tree_to_array(RPQTree *q, int* ar, int *off) {
 
 
 
+
+
+
+
+
 cardStat SimpleEstimator::estimate(RPQTree *q) {
     int sizequery = this->tree_ctr(q);
     int test[sizequery];
@@ -277,12 +282,20 @@ cardStat SimpleEstimator::estimate(RPQTree *q) {
     }
 
     //IN CASE OF EMERGENCY
-    return estimate_oude_stijl(test, sizequery);
+    //return estimate_oude_stijl(test, sizequery);
 
 
     int test_rev[sizequery];
     for (int i = 0; i < sizequery; i++){
-        test_rev[i] = (test[sizequery - i - 1] + g_L) % g_L;
+        test_rev[i] = (test[sizequery - i - 1] + g_L) % precal_L2;
+    }
+
+    if (DEBUG) {
+        std::cout << "query: \n";
+        for (int i = 0; i < sizequery; i++) {
+            std::cout << "X: " << test[i] << ", " << test_rev[i] << "\n";
+        }
+        std::cout << "query end.\n";
     }
 
 
@@ -298,6 +311,22 @@ cardStat SimpleEstimator::estimate(RPQTree *q) {
 
     return uitkomst;
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 cardStat SimpleEstimator::estimate_oude_stijl(int test[], int sizequery) {
     //q->print();
