@@ -62,24 +62,24 @@
   </component>
   <component name="ExecutionTargetManager" SELECTED_TARGET="CMakeBuildProfile:Debug" />
   <component name="FileEditorManager">
-    <splitter split-orientation="horizontal" split-proportion="0.4711329">
+    <splitter split-orientation="horizontal" split-proportion="0.5627306">
       <split-first>
         <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
           <file leaf-file-name="SimpleGraph.cpp" pinned="false" current-in-tab="false">
             <entry file="file://$PROJECT_DIR$/src/SimpleGraph.cpp">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="426">
-                  <caret line="33" column="1" lean-forward="false" selection-start-line="33" selection-start-column="1" selection-end-line="33" selection-end-column="1" />
+                <state relative-caret-position="119">
+                  <caret line="7" column="17" lean-forward="false" selection-start-line="7" selection-start-column="4" selection-end-line="7" selection-end-column="17" />
                   <folding />
                 </state>
               </provider>
             </entry>
           </file>
-          <file leaf-file-name="CMakeLists.txt" pinned="false" current-in-tab="true">
+          <file leaf-file-name="CMakeLists.txt" pinned="false" current-in-tab="false">
             <entry file="file://$PROJECT_DIR$/CMakeLists.txt">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="391">
-                  <caret line="23" column="29" lean-forward="false" selection-start-line="23" selection-start-column="29" selection-end-line="23" selection-end-column="29" />
+                <state relative-caret-position="255">
+                  <caret line="15" column="0" lean-forward="true" selection-start-line="15" selection-start-column="0" selection-end-line="15" selection-end-column="0" />
                   <folding />
                 </state>
               </provider>
@@ -97,11 +97,11 @@
               </provider>
             </entry>
           </file>
-          <file leaf-file-name="SimpleEvaluator.cpp" pinned="false" current-in-tab="false">
+          <file leaf-file-name="SimpleEvaluator.cpp" pinned="false" current-in-tab="true">
             <entry file="file://$PROJECT_DIR$/src/SimpleEvaluator.cpp">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="480">
-                  <caret line="34" column="1" lean-forward="false" selection-start-line="34" selection-start-column="1" selection-end-line="34" selection-end-column="1" />
+                <state relative-caret-position="548">
+                  <caret line="56" column="51" lean-forward="false" selection-start-line="56" selection-start-column="40" selection-end-line="56" selection-end-column="51" />
                   <folding />
                 </state>
               </provider>
@@ -157,11 +157,11 @@
       </split-first>
       <split-second>
         <leaf>
-          <file leaf-file-name="SimpleEstimator.cpp" pinned="false" current-in-tab="true">
+          <file leaf-file-name="SimpleEstimator.cpp" pinned="false" current-in-tab="false">
             <entry file="file://$PROJECT_DIR$/src/SimpleEstimator.cpp">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="187">
-                  <caret line="86" column="16" lean-forward="true" selection-start-line="86" selection-start-column="16" selection-end-line="86" selection-end-column="16" />
+                <state relative-caret-position="255">
+                  <caret line="87" column="43" lean-forward="false" selection-start-line="87" selection-start-column="32" selection-end-line="87" selection-end-column="43" />
                   <folding>
                     <element signature="e#53#77#0" expanded="true" />
                     <element signature="e#172#189#0" expanded="true" />
@@ -170,11 +170,11 @@
               </provider>
             </entry>
           </file>
-          <file leaf-file-name="SimpleGraph.h" pinned="false" current-in-tab="false">
+          <file leaf-file-name="SimpleGraph.h" pinned="false" current-in-tab="true">
             <entry file="file://$PROJECT_DIR$/include/SimpleGraph.h">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="272">
-                  <caret line="22" column="0" lean-forward="false" selection-start-line="22" selection-start-column="0" selection-end-line="22" selection-end-column="0" />
+                <state relative-caret-position="306">
+                  <caret line="24" column="0" lean-forward="true" selection-start-line="24" selection-start-column="0" selection-end-line="24" selection-end-column="0" />
                   <folding />
                 </state>
               </provider>
@@ -198,13 +198,13 @@
       <find>graph-&gt;getNoVertices</find>
       <find>queryquery</find>
       <find>cout</find>
-      <find>CS</find>
       <find>project</find>
       <find>SimpleEvaluator</find>
+      <find>CS</find>
     </findStrings>
     <replaceStrings>
-      <replace>g_V</replace>
       <replace>SimpleFranzor</replace>
+      <replace>g_V</replace>
     </replaceStrings>
   </component>
   <component name="Git.Settings">
@@ -343,13 +343,13 @@
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="101451000" />
+    <option name="totallyTimeSpent" value="101915000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="54" y="-8" width="1874" height="1096" extended-state="6" />
     <editor active="true" />
     <layout>
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.114379086" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.114379086" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Messages" active="false" anchor="bottom" auto_hide="true" internal_type="SLIDING" type="WINDOWED" visible="true" show_stripe_button="true" weight="0.66910994" sideWeight="0.49613258" order="11" side_tool="false" content_ui="tabs" x="2761" y="59" width="838" height="988" />
       <window_info id="CMake" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.2852697" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
@@ -433,8 +433,7 @@
         <state relative-caret-position="595">
           <caret line="35" column="35" lean-forward="false" selection-start-line="35" selection-start-column="35" selection-end-line="35" selection-end-column="35" />
           <folding>
-            <element signature="e#53#77#0" expanded="true" />
-            <element signature="e#172#189#0" expanded="true" />
+            <element signature="e#284#312#0" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -533,8 +532,7 @@
         <state relative-caret-position="272">
           <caret line="16" column="0" lean-forward="false" selection-start-line="16" selection-start-column="0" selection-end-line="16" selection-end-column="0" />
           <folding>
-            <element signature="e#53#77#0" expanded="true" />
-            <element signature="e#172#189#0" expanded="true" />
+            <element signature="e#284#312#0" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -569,8 +567,7 @@
         <state relative-caret-position="272">
           <caret line="16" column="0" lean-forward="true" selection-start-line="16" selection-start-column="0" selection-end-line="16" selection-end-column="0" />
           <folding>
-            <element signature="e#53#77#0" expanded="true" />
-            <element signature="e#172#189#0" expanded="true" />
+            <element signature="e#284#312#0" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -658,8 +655,7 @@
         <state relative-caret-position="0">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding>
-            <element signature="e#53#77#0" expanded="true" />
-            <element signature="e#172#189#0" expanded="true" />
+            <element signature="e#284#312#0" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -729,26 +725,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/SimpleGraph.cpp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="426">
-          <caret line="33" column="1" lean-forward="false" selection-start-line="33" selection-start-column="1" selection-end-line="33" selection-end-column="1" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/RPQTree.cpp">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="374">
           <caret line="62" column="0" lean-forward="false" selection-start-line="62" selection-start-column="0" selection-end-line="62" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/include/SimpleGraph.h">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="272">
-          <caret line="22" column="0" lean-forward="false" selection-start-line="22" selection-start-column="0" selection-end-line="22" selection-end-column="0" />
           <folding />
         </state>
       </provider>
@@ -817,30 +797,45 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/SimpleEvaluator.cpp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="480">
-          <caret line="34" column="1" lean-forward="false" selection-start-line="34" selection-start-column="1" selection-end-line="34" selection-end-column="1" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/CMakeLists.txt">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="391">
-          <caret line="23" column="29" lean-forward="false" selection-start-line="23" selection-start-column="29" selection-end-line="23" selection-end-column="29" />
+        <state relative-caret-position="255">
+          <caret line="15" column="0" lean-forward="true" selection-start-line="15" selection-start-column="0" selection-end-line="15" selection-end-column="0" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/SimpleEstimator.cpp">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="187">
-          <caret line="86" column="16" lean-forward="true" selection-start-line="86" selection-start-column="16" selection-end-line="86" selection-end-column="16" />
+        <state relative-caret-position="272">
+          <caret line="21" column="28" lean-forward="false" selection-start-line="21" selection-start-column="28" selection-end-line="21" selection-end-column="28" />
           <folding>
-            <element signature="e#53#77#0" expanded="true" />
-            <element signature="e#172#189#0" expanded="true" />
+            <element signature="e#284#312#0" expanded="true" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/SimpleGraph.cpp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="119">
+          <caret line="7" column="17" lean-forward="false" selection-start-line="7" selection-start-column="4" selection-end-line="7" selection-end-column="17" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/include/SimpleGraph.h">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="306">
+          <caret line="24" column="0" lean-forward="true" selection-start-line="24" selection-start-column="0" selection-end-line="24" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/SimpleEvaluator.cpp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="548">
+          <caret line="56" column="51" lean-forward="false" selection-start-line="56" selection-start-column="40" selection-end-line="56" selection-end-column="51" />
+          <folding />
         </state>
       </provider>
     </entry>
