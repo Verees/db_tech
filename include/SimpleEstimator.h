@@ -30,6 +30,7 @@ private:
     uint32_t g_L, g_V, g_E;
 
 
+    cardStat estimate_oude_stijl(int test[], int sizequery);
 
     int tree_ctr(RPQTree *q);
     int tree_to_array(RPQTree *q, int* ar, int *off);
