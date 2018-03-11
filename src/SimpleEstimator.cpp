@@ -21,7 +21,7 @@ SimpleEstimator::SimpleEstimator(std::shared_ptr<SimpleGraph> &g){
 
     precal_L2 = g->getNoLabels() * 2;
 
-    precal = (uint32_t*) malloc(sizeof(uint32_t) * precal_L2 * precal_L2 * 3);
+    precal = (uint16_t*) malloc(sizeof(uint16_t) * precal_L2 * precal_L2 * 3);
 
     if (precal == NULL) {
         std::cout << "could not grab mem, aboring.\n";
@@ -69,8 +69,8 @@ void SimpleEstimator::precal_prep() {
             auto actual = ev->evaluate(queryTree);
             //end = std::chrono::steady_clock::now();
 
-            //std::cout << "Actual (noOut, noPaths, noIn) : ";
-            //actual.print();
+            std::cout << "Actual (noOut, noPaths, noIn) : ";
+            actual.print();
 
             uint32_t off = (3 * ((precal_L2 * L1) + L2));
             precal[off + 0] = actual.noOut;

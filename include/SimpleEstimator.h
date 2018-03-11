@@ -16,7 +16,8 @@ private:
     std::vector<std::vector<int> > CS = {};
 
     //[first][sec][{noOut, noPaths, noI}]
-    uint32_t *precal;
+    //uint32_t *precal;
+    uint16_t *precal;
     uint32_t precal_L2;
 
     inline uint32_t precal_noOut(uint32_t L1, uint32_t L2);
