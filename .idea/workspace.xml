@@ -43,11 +43,21 @@
   <component name="ExecutionTargetManager" SELECTED_TARGET="CMakeBuildProfile:Debug" />
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
+      <file leaf-file-name="main.cpp" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main.cpp">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="273">
+              <caret line="100" column="36" lean-forward="false" selection-start-line="100" selection-start-column="29" selection-end-line="100" selection-end-column="36" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
       <file leaf-file-name="SimpleGraph.cpp" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/SimpleGraph.cpp">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="324">
-              <caret line="27" column="43" lean-forward="false" selection-start-line="27" selection-start-column="43" selection-end-line="28" selection-end-column="13" />
+            <state relative-caret-position="545">
+              <caret line="40" column="0" lean-forward="false" selection-start-line="40" selection-start-column="0" selection-end-line="40" selection-end-column="0" />
               <folding />
             </state>
           </provider>
@@ -73,16 +83,6 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="CMakeLists.txt" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/CMakeLists.txt">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="153">
-              <caret line="9" column="0" lean-forward="false" selection-start-line="9" selection-start-column="0" selection-end-line="9" selection-end-column="0" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
       <file leaf-file-name="Estimator.h" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/include/Estimator.h">
           <provider selected="true" editor-type-id="text-editor">
@@ -93,11 +93,11 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="SimpleEstimator.cpp" pinned="false" current-in-tab="false">
+      <file leaf-file-name="SimpleEstimator.cpp" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/SimpleEstimator.cpp">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="392">
-              <caret line="274" column="50" lean-forward="false" selection-start-line="274" selection-start-column="50" selection-end-line="274" selection-end-column="50" />
+            <state relative-caret-position="664">
+              <caret line="301" column="0" lean-forward="true" selection-start-line="301" selection-start-column="0" selection-end-line="301" selection-end-column="0" />
               <folding>
                 <element signature="e#53#77#0" expanded="true" />
               </folding>
@@ -109,7 +109,7 @@
         <entry file="file://$PROJECT_DIR$/.gitignore">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="170">
-              <caret line="10" column="5" lean-forward="true" selection-start-line="10" selection-start-column="5" selection-end-line="10" selection-end-column="5" />
+              <caret line="10" column="5" lean-forward="false" selection-start-line="10" selection-start-column="5" selection-end-line="10" selection-end-column="5" />
               <folding />
             </state>
           </provider>
@@ -149,6 +149,7 @@
       <find>graph-&gt;L</find>
       <find>graph-&gt;getNo</find>
       <find>graph-&gt;getNoVertices</find>
+      <find>cout</find>
     </findStrings>
     <replaceStrings>
       <replace>g_V</replace>
@@ -166,9 +167,9 @@
         <option value="$PROJECT_DIR$/include/SimpleGraph.h" />
         <option value="$PROJECT_DIR$/src/RPQTree.cpp" />
         <option value="$PROJECT_DIR$/include/SimpleEstimator.h" />
-        <option value="$PROJECT_DIR$/src/SimpleEstimator.cpp" />
         <option value="$PROJECT_DIR$/.gitignore" />
         <option value="$PROJECT_DIR$/CMakeLists.txt" />
+        <option value="$PROJECT_DIR$/src/SimpleEstimator.cpp" />
       </list>
     </option>
   </component>
@@ -179,7 +180,8 @@
     <sorting>DEFINITION_ORDER</sorting>
   </component>
   <component name="ProjectFrameBounds" extendedState="6">
-    <option name="x" value="984" />
+    <option name="x" value="34" />
+    <option name="y" value="-29" />
     <option name="width" value="943" />
     <option name="height" value="1087" />
   </component>
@@ -239,7 +241,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Application.quickSilver Large">
+  <component name="RunManager" selected="Application.quickSilver Test">
     <configuration name="quickSilver Large" type="CMakeRunConfiguration" factoryName="Application" singleton="true" PROGRAM_PARAMS="graph.nt queriesR.csv" WORKING_DIR="file://$PROJECT_DIR$/../working directory" PASS_PARENT_ENVS_2="true" CONFIG_NAME="Debug" RUN_TARGET_PROJECT_NAME="quicksilver" RUN_TARGET_NAME="quicksilver" EXPLICIT_BUILD_TARGET_NAME="all">
       <envs />
     </configuration>
@@ -284,12 +286,12 @@
       <workItem from="1520705556473" duration="380000" />
       <workItem from="1520705960680" duration="5614000" />
       <workItem from="1520724657829" duration="5386000" />
-      <workItem from="1520764131737" duration="20226000" />
+      <workItem from="1520764131737" duration="21249000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="86888000" />
+    <option name="totallyTimeSpent" value="87911000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="54" y="-8" width="1874" height="1096" extended-state="6" />
@@ -299,7 +301,7 @@
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Messages" active="false" anchor="bottom" auto_hide="true" internal_type="SLIDING" type="WINDOWED" visible="true" show_stripe_button="true" weight="0.66910994" sideWeight="0.49613258" order="11" side_tool="false" content_ui="tabs" x="1920" y="51" width="1680" height="997" />
       <window_info id="CMake" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.2852697" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.66910994" sideWeight="0.5038674" order="8" side_tool="true" content_ui="tabs" />
+      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.6690871" sideWeight="0.5038674" order="8" side_tool="true" content_ui="tabs" />
       <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="SLIDING" type="WINDOWED" visible="true" show_stripe_button="true" weight="0.32987553" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" x="1920" y="51" width="1680" height="997" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
@@ -619,16 +621,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main.cpp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="341">
-          <caret line="100" column="36" lean-forward="false" selection-start-line="100" selection-start-column="29" selection-end-line="100" selection-end-column="36" />
-          <folding>
-            <element signature="e#0#19#0" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/include/SimpleGraph.h">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="323">
@@ -647,26 +639,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/include/Evaluator.h">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="323">
-          <caret line="21" column="23" lean-forward="false" selection-start-line="21" selection-start-column="23" selection-end-line="21" selection-end-column="23" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/include/Estimator.h">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="391">
           <caret line="24" column="24" lean-forward="false" selection-start-line="24" selection-start-column="17" selection-end-line="24" selection-end-column="24" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/SimpleGraph.cpp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="324">
-          <caret line="27" column="43" lean-forward="false" selection-start-line="27" selection-start-column="43" selection-end-line="28" selection-end-column="13" />
           <folding />
         </state>
       </provider>
@@ -719,29 +695,53 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/SimpleEstimator.cpp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="392">
-          <caret line="274" column="50" lean-forward="false" selection-start-line="274" selection-start-column="50" selection-end-line="274" selection-end-column="50" />
-          <folding>
-            <element signature="e#53#77#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/.gitignore">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="170">
-          <caret line="10" column="5" lean-forward="true" selection-start-line="10" selection-start-column="5" selection-end-line="10" selection-end-column="5" />
+          <caret line="10" column="5" lean-forward="false" selection-start-line="10" selection-start-column="5" selection-end-line="10" selection-end-column="5" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/CMakeLists.txt">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="153">
-          <caret line="9" column="0" lean-forward="false" selection-start-line="9" selection-start-column="0" selection-end-line="9" selection-end-column="0" />
+        <state relative-caret-position="493">
+          <caret line="29" column="9" lean-forward="true" selection-start-line="29" selection-start-column="9" selection-end-line="29" selection-end-column="9" />
           <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/include/Evaluator.h">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="323">
+          <caret line="21" column="23" lean-forward="false" selection-start-line="21" selection-start-column="23" selection-end-line="21" selection-end-column="23" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/SimpleGraph.cpp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="545">
+          <caret line="40" column="0" lean-forward="false" selection-start-line="40" selection-start-column="0" selection-end-line="40" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main.cpp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="273">
+          <caret line="100" column="36" lean-forward="false" selection-start-line="100" selection-start-column="29" selection-end-line="100" selection-end-column="36" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/SimpleEstimator.cpp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="664">
+          <caret line="301" column="0" lean-forward="true" selection-start-line="301" selection-start-column="0" selection-end-line="301" selection-end-column="0" />
+          <folding>
+            <element signature="e#53#77#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>

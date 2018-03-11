@@ -7,6 +7,8 @@
 #include <iostream>
 #include <iomanip>
 
+#define DEBUG false
+
 SimpleEstimator::SimpleEstimator(std::shared_ptr<SimpleGraph> &g){
 
     // works only with SimpleGraph
@@ -91,12 +93,13 @@ void SimpleEstimator::prepare() {
 
     }
 
-    for ( const auto &row : CS )
-    {
-        for ( const auto &s : row ) {
-            std::cout << std::setw(6) << s << ' ';
+    if (DEBUG) {
+        for (const auto &row : CS) {
+            for (const auto &s : row) {
+                std::cout << std::setw(6) << s << ' ';
+            }
+            std::cout << std::endl;
         }
-        std::cout << std::endl;
     }
 
     int total = 0;
@@ -105,8 +108,9 @@ void SimpleEstimator::prepare() {
         total = total + CS[i][g_L*2];
     }
 
-    std::cout << total << ' ';
-
+    if (DEBUG) {
+        std::cout << total << ' ';
+    }
 }
 
 
@@ -155,9 +159,11 @@ cardStat SimpleEstimator::estimate(RPQTree *q) {
 
     tree_to_array(q, test, &tree_offset);
 
-    std::cout << "\n" << "henk:";
-    for (int asdasd=0; asdasd<sizequery; asdasd++) {
-        std::cout << test[asdasd] << ',';
+    if (DEBUG) {
+        std::cout << "\n" << "henk:";
+        for (int asdasd = 0; asdasd < sizequery; asdasd++) {
+            std::cout << test[asdasd] << ',';
+        }
     }
 
     //int test[sizequery] = {0,1,2,2,3};
@@ -284,11 +290,14 @@ cardStat SimpleEstimator::estimate(RPQTree *q) {
         ratio = pre/tot;
         pre_in = pre_in * ratio;
         estimate = estimate * avg;
-        std::cout << "avg_tot: " << avg_tot << ", ";
-        std::cout << "counter: " << counter << ", ";
-        std::cout << "avg: " << avg << ", ";
-        //std::cout << "r: " << ratio << ", ";
-        //std::cout << "u: " << pre_in << "; ";
+
+        if (DEBUG) {
+            std::cout << "avg_tot: " << avg_tot << ", ";
+            std::cout << "counter: " << counter << ", ";
+            std::cout << "avg: " << avg << ", ";
+            //std::cout << "r: " << ratio << ", ";
+            //std::cout << "u: " << pre_in << "; ";
+        }
     }
 
     in = pre_in;
