@@ -9,6 +9,34 @@
 #include "SimpleGraph.h"
 #include <SimpleEvaluator.h>
 
+
+#include <memory>
+#include <cmath>
+#include "SimpleGraph.h"
+#include "RPQTree.h"
+#include "Evaluator.h"
+#include "Graph.h"
+
+class SimpleFranzor : public Evaluator {
+    std::shared_ptr<SimpleGraph> graph;
+
+public:
+
+    explicit SimpleFranzor(std::shared_ptr<SimpleGraph> &g);
+    ~SimpleFranzor() = default;
+
+    void prepare() override ;
+    cardStat evaluate(RPQTree *query) override ;
+
+    std::shared_ptr<SimpleGraph> evaluate_aux(RPQTree *q);
+    static std::shared_ptr<SimpleGraph> project(uint32_t label, bool inverse, std::shared_ptr<SimpleGraph> &g);
+    static std::shared_ptr<SimpleGraph> join(std::shared_ptr<SimpleGraph> &left, std::shared_ptr<SimpleGraph> &right);
+
+    static cardStat computeStats(std::shared_ptr<SimpleGraph> &g);
+
+};
+
+
 class SimpleEstimator : public Estimator {
 
 private:
