@@ -321,7 +321,7 @@ cardStat SimpleEstimator::estimate(RPQTree *q) {
 
     if (sizequery >= 2) {
         pre_in   =  precal_noIn(test[0], test[1]);
-        estimate =  precal_noIn(test[0], test[1]);
+        estimate =  precal_noPaths(test[0], test[1]);
 
         /*
         for (int i = 0; i < CS.size(); i++) {
