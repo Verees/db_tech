@@ -53,29 +53,51 @@ inline uint32_t SimpleEstimator::precal_noIn(uint32_t L1, uint32_t L2) {
 void SimpleEstimator::precal_prep() {
     for (uint32_t L1 = 0; L1 < precal_L2; L1++) {
         for (uint32_t L2 = 0; L2 < precal_L2; L2++) {
-            std::string query =
-                    precal_prep_label_to_string(L1)
-                    + "/" +
-                    precal_prep_label_to_string(L2);
-
-            //std::cout << query;
-
-            RPQTree *queryTree = RPQTree::strToTree(query);
-
-            // perform evaluation
-            auto ev = std::make_unique<SimpleEvaluator>(graph);
-            ev->prepare();
-            //start = std::chrono::steady_clock::now();
-            auto actual = ev->evaluate(queryTree);
-            //end = std::chrono::steady_clock::now();
-
-            //std::cout << "Actual (noOut, noPaths, noIn) : ";
-            //actual.print();
-
             uint32_t off = (3 * ((precal_L2 * L1) + L2));
-            precal[off + 0] = actual.noOut;
-            precal[off + 1] = actual.noPaths;
-            precal[off + 2] = actual.noIn;
+
+            bool werkt = false;
+
+            ///*
+            for (int r = 0; r < CS.size(); r++) {
+                uint32_t stap_1 = (L1 + g_L) % precal_L2;
+
+                if (CS[r][stap_1]) {
+                    if (CS[r][L2]) {
+                        werkt = true;
+                        break;
+                    }
+                }
+            }
+            //*/
+
+            if (werkt) {
+                std::string query =
+                        precal_prep_label_to_string(L1)
+                        + "/" +
+                        precal_prep_label_to_string(L2);
+
+                //std::cout << query;
+
+                RPQTree *queryTree = RPQTree::strToTree(query);
+
+                // perform evaluation
+                auto ev = std::make_unique<SimpleEvaluator>(graph);
+                ev->prepare();
+                //start = std::chrono::steady_clock::now();
+                auto actual = ev->evaluate(queryTree);
+                //end = std::chrono::steady_clock::now();
+
+                //std::cout << "Actual (noOut, noPaths, noIn) : ";
+                //actual.print();
+
+                precal[off + 0] = actual.noOut;
+                precal[off + 1] = actual.noPaths;
+                precal[off + 2] = actual.noIn;
+            } else {
+                precal[off + 0] = 0;
+                precal[off + 1] = 0;
+                precal[off + 2] = 0;
+            }
         }
     }
 }
@@ -102,14 +124,6 @@ void SimpleEstimator::prepare() {
     g_V = graph->getNoVertices();
     g_L = graph->getNoLabels();
 
-    //gogogo
-    precal_prep();
-
-    /*
-    std::cout << "\n xx-" << precal_noOut(0,1) << "-xx\n";
-    std::cout << "\n xx-" << precal_noOut(0,5) << "-xx\n";
-    std::cout << "\n xx-" << precal_noOut(1,2) << "-xx\n";
-    */
 
     // do your prep here
     //std::vector<std::int [noLabels*2+1]> CS;
@@ -201,6 +215,16 @@ void SimpleEstimator::prepare() {
     if (DEBUG) {
         std::cout << total << ' ';
     }
+
+
+    //gogogo
+    precal_prep();
+
+    /*
+    std::cout << "\n xx-" << precal_noOut(0,1) << "-xx\n";
+    std::cout << "\n xx-" << precal_noOut(0,5) << "-xx\n";
+    std::cout << "\n xx-" << precal_noOut(1,2) << "-xx\n";
+    */
 }
 
 
