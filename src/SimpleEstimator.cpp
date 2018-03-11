@@ -6,7 +6,10 @@
 #include "SimpleEstimator.h"
 #include <iostream>
 #include <iomanip>
-#include <unistd.h>
+
+//time
+#include <chrono>
+#include <thread>
 
 #define DEBUG false
 
@@ -18,7 +21,8 @@ SimpleEstimator::SimpleEstimator(std::shared_ptr<SimpleGraph> &g){
 }
 
 void SimpleEstimator::prepare() {
-    usleep(1e6);
+    std::this_thread::sleep_for(std::chrono::milliseconds(1000));
+
     //g_E = graph->getNoEdges();
     g_V = graph->getNoVertices();
     g_L = graph->getNoLabels();
