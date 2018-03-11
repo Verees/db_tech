@@ -4,6 +4,7 @@
 
 #include "SimpleGraph.h"
 #include "SimpleEstimator.h"
+#include "SimpleFranzor.h"
 #include <iostream>
 #include <iomanip>
 #include <string>
@@ -81,7 +82,7 @@ void SimpleEstimator::precal_prep() {
                 RPQTree *queryTree = RPQTree::strToTree(query);
 
                 // perform evaluation
-                auto ev = std::make_unique<SimpleEvaluator>(graph);
+                auto ev = std::make_unique<SimpleFranzor>(graph);
                 ev->prepare();
                 auto actual = ev->evaluate(queryTree);
 
