@@ -6,6 +6,7 @@
 #include "SimpleEstimator.h"
 #include <iostream>
 #include <iomanip>
+#include <string>
 
 //time
 #include <chrono>
@@ -18,18 +19,92 @@ SimpleEstimator::SimpleEstimator(std::shared_ptr<SimpleGraph> &g){
     // works only with SimpleGraph
     graph = g;
 
+    precal_L2 = g->getNoLabels() * 2;
+
+    precal = (uint32_t*) malloc(sizeof(uint32_t) * precal_L2 * precal_L2 * 3);
+
+    if (precal == NULL) {
+        std::cout << "could not grab mem, aboring.\n";
+        exit(1);
+    }
 }
 
+SimpleEstimator::~SimpleEstimator(){
+    free(precal);
+}
+
+
+/*******************************
+ * PRECAL BLOCK - start
+ *******************************/
+
+inline uint32_t SimpleEstimator::precal_noOut(uint32_t L1, uint32_t L2) {
+    return precal[(3 * ((precal_L2 * L1) + L2)) + 0];
+}
+
+inline uint32_t SimpleEstimator::precal_noPaths(uint32_t L1, uint32_t L2) {
+    return precal[(3 * ((precal_L2 * L1) + L2)) + 1];
+}
+
+inline uint32_t SimpleEstimator::precal_noIn(uint32_t L1, uint32_t L2) {
+    return precal[(3 * ((precal_L2 * L1) + L2)) + 2];
+}
+
+void SimpleEstimator::precal_prep() {
+    for (uint32_t L1 = 0; L1 < precal_L2; L1++) {
+        for (uint32_t L2 = 0; L2 < precal_L2; L2++) {
+            std::string query =
+                    precal_prep_label_to_string(L1)
+                    + "/" +
+                    precal_prep_label_to_string(L2);
+
+            //std::cout << query;
+
+            RPQTree *queryTree = RPQTree::strToTree(query);
+
+            // perform evaluation
+            auto ev = std::make_unique<SimpleEvaluator>(graph);
+            ev->prepare();
+            //start = std::chrono::steady_clock::now();
+            auto actual = ev->evaluate(queryTree);
+            //end = std::chrono::steady_clock::now();
+
+            //std::cout << "Actual (noOut, noPaths, noIn) : ";
+            //actual.print();
+
+            uint32_t off = (3 * ((precal_L2 * L1) + L2));
+            precal[off + 0] = actual.noOut;
+            precal[off + 1] = actual.noPaths;
+            precal[off + 2] = actual.noIn;
+        }
+    }
+}
+
+std::string SimpleEstimator::precal_prep_label_to_string(uint32_t label) {
+    if (label < g_L) {
+        return std::to_string(label) + "+";
+    } else {
+        return std::to_string(label - g_L) + "-";
+    }
+}
+
+/*******************************
+ * PRECAL BLOCK - end
+ *******************************/
+
+
+
+
 void SimpleEstimator::prepare() {
-    std::this_thread::sleep_for(std::chrono::milliseconds(1000));
+    //std::this_thread::sleep_for(std::chrono::milliseconds(1000));
 
     //g_E = graph->getNoEdges();
     g_V = graph->getNoVertices();
     g_L = graph->getNoLabels();
 
+    //gogogo
+    precal_prep();
 
-
-    std::cout << "3.1" << std::endl;
     // do your prep here
     //std::vector<std::int [noLabels*2+1]> CS;
 
@@ -41,7 +116,6 @@ void SimpleEstimator::prepare() {
 
 
 
-    std::cout << "3.2" << std::endl;
 
     //Run by each vertice
     for (int k=0; k < g_V; k++){
@@ -106,6 +180,10 @@ void SimpleEstimator::prepare() {
             }
             std::cout << std::endl;
         }
+
+
+        std::cout << "\n\n" << CS.size() << "\n" ;
+
     }
 
     int total = 0;

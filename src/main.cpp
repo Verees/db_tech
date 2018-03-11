@@ -72,14 +72,14 @@ int main(int argc, char *argv[]) {
 
     auto end = std::chrono::steady_clock::now();
     std::cout << "Time to read the graph into memory: " << std::chrono::duration<double, std::milli>(end - start).count() << " ms" << std::endl;
-    std::cout << "1" << std::endl;
+    //std::cout << "1" << std::endl;
     // prepare the estimator
     auto est = std::make_unique<SimpleEstimator>(g);
-    std::cout << "2" << std::endl;
+    //std::cout << "2" << std::endl;
     start = std::chrono::steady_clock::now();
-    std::cout << "3" << std::endl;
+    //std::cout << "3" << std::endl;
     est->prepare();
-    std::cout << "4" << std::endl;
+    //std::cout << "4" << std::endl;
     end = std::chrono::steady_clock::now();
     std::cout << "Time to prepare the estimator: " << std::chrono::duration<double, std::milli>(end - start).count() << " ms" << std::endl;
 
@@ -88,7 +88,6 @@ int main(int argc, char *argv[]) {
 
 
     // Query part:
-
 
     std::cout << "\n(2) Running the query workload..." << std::endl;
 
