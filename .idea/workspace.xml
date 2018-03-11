@@ -96,8 +96,8 @@
       <file leaf-file-name="SimpleEstimator.cpp" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/SimpleEstimator.cpp">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="664">
-              <caret line="301" column="0" lean-forward="true" selection-start-line="301" selection-start-column="0" selection-end-line="301" selection-end-column="0" />
+            <state relative-caret-position="340">
+              <caret line="29" column="41" lean-forward="true" selection-start-line="29" selection-start-column="41" selection-end-line="29" selection-end-column="41" />
               <folding>
                 <element signature="e#53#77#0" expanded="true" />
               </folding>
@@ -241,24 +241,20 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Application.quickSilver Test">
-    <configuration name="quickSilver Large" type="CMakeRunConfiguration" factoryName="Application" singleton="true" PROGRAM_PARAMS="graph.nt queriesR.csv" WORKING_DIR="file://$PROJECT_DIR$/../working directory" PASS_PARENT_ENVS_2="true" CONFIG_NAME="Debug" RUN_TARGET_PROJECT_NAME="quicksilver" RUN_TARGET_NAME="quicksilver" EXPLICIT_BUILD_TARGET_NAME="all">
-      <envs />
-    </configuration>
+  <component name="RunManager" selected="Application.quickSilver groot">
     <configuration name="quickSilver Test" type="CMakeRunConfiguration" factoryName="Application" singleton="true" PROGRAM_PARAMS="testSet20KCont.nt queriesSyn.csv" WORKING_DIR="file://$PROJECT_DIR$/../working directory" PASS_PARENT_ENVS_2="true" CONFIG_NAME="Debug" RUN_TARGET_PROJECT_NAME="quicksilver" RUN_TARGET_NAME="quicksilver" EXPLICIT_BUILD_TARGET_NAME="all">
       <envs />
     </configuration>
     <configuration name="quickSilver TestBeter" type="CMakeRunConfiguration" factoryName="Application" singleton="true" PROGRAM_PARAMS="testSet20KCont.nt queriesSyn_zelf.csv" WORKING_DIR="file://$PROJECT_DIR$/../working directory" PASS_PARENT_ENVS_2="true" CONFIG_NAME="Debug" RUN_TARGET_PROJECT_NAME="quicksilver" RUN_TARGET_NAME="quicksilver" EXPLICIT_BUILD_TARGET_NAME="all">
       <envs />
     </configuration>
-    <configuration name="quicksilver" type="CMakeRunConfiguration" factoryName="Application" PASS_PARENT_ENVS_2="true" PROJECT_NAME="quicksilver" TARGET_NAME="quicksilver" CONFIG_NAME="Debug" RUN_TARGET_PROJECT_NAME="quicksilver" RUN_TARGET_NAME="quicksilver">
+    <configuration name="quickSilver groot" type="CMakeRunConfiguration" factoryName="Application" singleton="true" PROGRAM_PARAMS="graph.nt queriesR.csv" WORKING_DIR="file://$PROJECT_DIR$/../working directory" PASS_PARENT_ENVS_2="true" CONFIG_NAME="Debug" RUN_TARGET_PROJECT_NAME="quicksilver" RUN_TARGET_NAME="quicksilver" EXPLICIT_BUILD_TARGET_NAME="all">
       <envs />
     </configuration>
-    <list size="4">
+    <list size="3">
       <item index="0" class="java.lang.String" itemvalue="Application.quickSilver Test" />
       <item index="1" class="java.lang.String" itemvalue="Application.quickSilver TestBeter" />
-      <item index="2" class="java.lang.String" itemvalue="Application.quickSilver Large" />
-      <item index="3" class="java.lang.String" itemvalue="Application.quicksilver" />
+      <item index="2" class="java.lang.String" itemvalue="Application.quickSilver groot" />
     </list>
   </component>
   <component name="ShelveChangesManager" show_recycled="false">
@@ -286,12 +282,12 @@
       <workItem from="1520705556473" duration="380000" />
       <workItem from="1520705960680" duration="5614000" />
       <workItem from="1520724657829" duration="5386000" />
-      <workItem from="1520764131737" duration="21249000" />
+      <workItem from="1520764131737" duration="21611000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="87911000" />
+    <option name="totallyTimeSpent" value="88273000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="54" y="-8" width="1874" height="1096" extended-state="6" />
@@ -299,7 +295,7 @@
     <layout>
       <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.114379086" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
-      <window_info id="Messages" active="false" anchor="bottom" auto_hide="true" internal_type="SLIDING" type="WINDOWED" visible="true" show_stripe_button="true" weight="0.66910994" sideWeight="0.49613258" order="11" side_tool="false" content_ui="tabs" x="1920" y="51" width="1680" height="997" />
+      <window_info id="Messages" active="true" anchor="bottom" auto_hide="true" internal_type="SLIDING" type="WINDOWED" visible="true" show_stripe_button="true" weight="0.66910994" sideWeight="0.49613258" order="11" side_tool="false" content_ui="tabs" x="1920" y="51" width="1680" height="997" />
       <window_info id="CMake" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.2852697" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.6690871" sideWeight="0.5038674" order="8" side_tool="true" content_ui="tabs" />
       <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="SLIDING" type="WINDOWED" visible="true" show_stripe_button="true" weight="0.32987553" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" x="1920" y="51" width="1680" height="997" />
@@ -737,8 +733,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/SimpleEstimator.cpp">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="664">
-          <caret line="301" column="0" lean-forward="true" selection-start-line="301" selection-start-column="0" selection-end-line="301" selection-end-column="0" />
+        <state relative-caret-position="340">
+          <caret line="29" column="41" lean-forward="true" selection-start-line="29" selection-start-column="41" selection-end-line="29" selection-end-column="41" />
           <folding>
             <element signature="e#53#77#0" expanded="true" />
           </folding>

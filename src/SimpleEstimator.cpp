@@ -6,6 +6,7 @@
 #include "SimpleEstimator.h"
 #include <iostream>
 #include <iomanip>
+#include <unistd.h>
 
 #define DEBUG false
 
@@ -17,6 +18,7 @@ SimpleEstimator::SimpleEstimator(std::shared_ptr<SimpleGraph> &g){
 }
 
 void SimpleEstimator::prepare() {
+    usleep(1e6);
     //g_E = graph->getNoEdges();
     g_V = graph->getNoVertices();
     g_L = graph->getNoLabels();
