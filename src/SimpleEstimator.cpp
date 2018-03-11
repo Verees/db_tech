@@ -232,8 +232,8 @@ void SimpleEstimator::precal_prep() {
                 RPQTree *queryTree = RPQTree::strToTree(query);
 
                 // perform evaluation
-                //auto ev = std::make_unique<SimpleFranzor>(graph);
-                auto ev = std::make_unique<SimpleEvaluator>(graph);
+                auto ev = std::make_unique<SimpleFranzor>(graph);
+                //??? auto ev = std::make_unique<SimpleEvaluator>(graph);
                 ev->prepare();
                 auto actual = ev->evaluate(queryTree);
 
