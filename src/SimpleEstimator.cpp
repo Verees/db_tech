@@ -85,7 +85,9 @@ std::shared_ptr<SimpleGraph> SimpleFranzor::project(uint32_t projectLabel, bool 
 }
 
 std::shared_ptr<SimpleGraph> SimpleFranzor::join(std::shared_ptr<SimpleGraph> &left, std::shared_ptr<SimpleGraph> &right) {
+    return left;
 
+    /*
     auto out = std::make_shared<SimpleGraph>(left->getNoVertices());
     out->setNoLabels(1);
 
@@ -104,6 +106,7 @@ std::shared_ptr<SimpleGraph> SimpleFranzor::join(std::shared_ptr<SimpleGraph> &l
     }
 
     return out;
+    */
 }
 
 std::shared_ptr<SimpleGraph> SimpleFranzor::evaluate_aux(RPQTree *q) {
