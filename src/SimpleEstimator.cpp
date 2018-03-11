@@ -277,7 +277,7 @@ cardStat SimpleEstimator::estimate(RPQTree *q) {
     }
 
     //IN CASE OF EMERGENCY
-    //return estimate_oude_stijl(test, sizequery);
+    return estimate_oude_stijl(test, sizequery);
 
 
     int test_rev[sizequery];
