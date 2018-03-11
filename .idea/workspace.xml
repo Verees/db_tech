@@ -85,10 +85,10 @@
               </provider>
             </entry>
           </file>
-          <file leaf-file-name="SimpleEvaluator.cpp" pinned="false" current-in-tab="false">
+          <file leaf-file-name="SimpleEvaluator.cpp" pinned="false" current-in-tab="true">
             <entry file="file://$PROJECT_DIR$/src/SimpleEvaluator.cpp">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="433">
+                <state relative-caret-position="447">
                   <caret line="116" column="0" lean-forward="false" selection-start-line="116" selection-start-column="0" selection-end-line="116" selection-end-column="0" />
                   <folding>
                     <element signature="e#53#81#0" expanded="true" />
@@ -129,11 +129,11 @@
               </provider>
             </entry>
           </file>
-          <file leaf-file-name="SimpleEvaluator.h" pinned="false" current-in-tab="true">
+          <file leaf-file-name="SimpleEvaluator.h" pinned="false" current-in-tab="false">
             <entry file="file://$PROJECT_DIR$/include/SimpleEvaluator.h">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="391">
-                  <caret line="23" column="29" lean-forward="true" selection-start-line="23" selection-start-column="29" selection-end-line="23" selection-end-column="29" />
+                <state relative-caret-position="255">
+                  <caret line="15" column="42" lean-forward="true" selection-start-line="15" selection-start-column="42" selection-end-line="15" selection-end-column="42" />
                   <folding>
                     <element signature="e#113#130#0" expanded="true" />
                   </folding>
@@ -157,7 +157,7 @@
             <entry file="file://$PROJECT_DIR$/src/SimpleEstimator.cpp">
               <provider selected="true" editor-type-id="text-editor">
                 <state relative-caret-position="256">
-                  <caret line="129" column="0" lean-forward="false" selection-start-line="129" selection-start-column="0" selection-end-line="129" selection-end-column="0" />
+                  <caret line="128" column="0" lean-forward="false" selection-start-line="128" selection-start-column="0" selection-end-line="128" selection-end-column="0" />
                   <folding>
                     <element signature="e#53#77#0" expanded="true" />
                     <element signature="e#172#189#0" expanded="true" />
@@ -173,8 +173,8 @@
           <file leaf-file-name="SimpleEstimator.cpp" pinned="false" current-in-tab="true">
             <entry file="file://$PROJECT_DIR$/src/SimpleEstimator.cpp">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="612">
-                  <caret line="93" column="18" lean-forward="true" selection-start-line="93" selection-start-column="18" selection-end-line="93" selection-end-column="18" />
+                <state relative-caret-position="391">
+                  <caret line="86" column="41" lean-forward="false" selection-start-line="86" selection-start-column="41" selection-end-line="86" selection-end-column="41" />
                   <folding>
                     <element signature="e#53#77#0" expanded="true" />
                     <element signature="e#172#189#0" expanded="true" />
@@ -347,12 +347,12 @@
       <workItem from="1520705556473" duration="380000" />
       <workItem from="1520705960680" duration="5614000" />
       <workItem from="1520724657829" duration="5386000" />
-      <workItem from="1520764131737" duration="32683000" />
+      <workItem from="1520764131737" duration="32808000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="99345000" />
+    <option name="totallyTimeSpent" value="99470000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="54" y="-8" width="1874" height="1096" extended-state="6" />
@@ -810,9 +810,19 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/include/SimpleEvaluator.h">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="255">
+          <caret line="15" column="42" lean-forward="true" selection-start-line="15" selection-start-column="42" selection-end-line="15" selection-end-column="42" />
+          <folding>
+            <element signature="e#113#130#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/SimpleEvaluator.cpp">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="433">
+        <state relative-caret-position="447">
           <caret line="116" column="0" lean-forward="false" selection-start-line="116" selection-start-column="0" selection-end-line="116" selection-end-column="0" />
           <folding>
             <element signature="e#53#81#0" expanded="true" />
@@ -820,20 +830,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/include/SimpleEvaluator.h">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="391">
-          <caret line="23" column="29" lean-forward="true" selection-start-line="23" selection-start-column="29" selection-end-line="23" selection-end-column="29" />
-          <folding>
-            <element signature="e#113#130#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/SimpleEstimator.cpp">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="612">
-          <caret line="93" column="18" lean-forward="true" selection-start-line="93" selection-start-column="18" selection-end-line="93" selection-end-column="18" />
+        <state relative-caret-position="391">
+          <caret line="86" column="41" lean-forward="false" selection-start-line="86" selection-start-column="41" selection-end-line="86" selection-end-column="41" />
           <folding>
             <element signature="e#53#77#0" expanded="true" />
             <element signature="e#172#189#0" expanded="true" />

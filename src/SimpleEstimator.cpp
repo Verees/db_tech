@@ -69,7 +69,7 @@ void SimpleEstimator::precal_prep() {
                 }
             }
             //*/
-            werkt = false;
+
             if (werkt) {
                 std::string query =
                         precal_prep_label_to_string(L1)
@@ -83,9 +83,8 @@ void SimpleEstimator::precal_prep() {
                 // perform evaluation
                 auto ev = std::make_unique<SimpleEvaluator>(graph);
                 ev->prepare();
-                //start = std::chrono::steady_clock::now();
-                auto actual = ev->evaluate(queryTree);
-                //end = std::chrono::steady_clock::now();
+                //auto actual = ev->evaluate(queryTree);
+                cardstat actual = {0,0,0};
 
                 //std::cout << "Actual (noOut, noPaths, noIn) : ";
                 //actual.print();
