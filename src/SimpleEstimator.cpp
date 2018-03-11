@@ -21,7 +21,7 @@ SimpleEstimator::SimpleEstimator(std::shared_ptr<SimpleGraph> &g){
 
     precal_L2 = g->getNoLabels() * 2;
 
-    precal = (uint32_t*) malloc(sizeof(uint32_t) * precal_L2 * precal_L2 * 3);
+    precal = (uint32_t*) malloc(sizeof(uint32_t) * precal_L2 * precal_L2 * 3 * 10);
 
     if (precal == NULL) {
         std::cout << "could not grab mem, aboring.\n";
