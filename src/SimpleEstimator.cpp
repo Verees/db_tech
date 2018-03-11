@@ -21,7 +21,7 @@ SimpleEstimator::SimpleEstimator(std::shared_ptr<SimpleGraph> &g){
 
     precal_L2 = g->getNoLabels() * 2;
 
-    precal = (uint16_t*) malloc(sizeof(uint16_t) * precal_L2 * precal_L2 * 3);
+    precal = (uint32_t*) malloc(sizeof(uint32_t) * precal_L2 * precal_L2 * 3);
 
     if (precal == NULL) {
         std::cout << "could not grab mem, aboring.\n";
@@ -69,8 +69,8 @@ void SimpleEstimator::precal_prep() {
             auto actual = ev->evaluate(queryTree);
             //end = std::chrono::steady_clock::now();
 
-            std::cout << "Actual (noOut, noPaths, noIn) : ";
-            actual.print();
+            //std::cout << "Actual (noOut, noPaths, noIn) : ";
+            //actual.print();
 
             uint32_t off = (3 * ((precal_L2 * L1) + L2));
             precal[off + 0] = actual.noOut;
@@ -104,6 +104,12 @@ void SimpleEstimator::prepare() {
 
     //gogogo
     precal_prep();
+
+    /*
+    std::cout << "\n xx-" << precal_noOut(0,1) << "-xx\n";
+    std::cout << "\n xx-" << precal_noOut(0,5) << "-xx\n";
+    std::cout << "\n xx-" << precal_noOut(1,2) << "-xx\n";
+    */
 
     // do your prep here
     //std::vector<std::int [noLabels*2+1]> CS;
@@ -268,67 +274,72 @@ cardStat SimpleEstimator::estimate(RPQTree *q) {
 
     int total = 0;
 
-    for (int i = 0; i<CS.size(); i++){
-        total = total + CS[i][g_L*2];
+    for (int i = 0; i < CS.size(); i++) {
+        total = total + CS[i][g_L * 2];
     }
 
-   // std::cout << total << ' ';
+    // std::cout << total << ' ';
 
 /***********************************************
  * Out:
  */
 
-    for (int i = 0; i<CS.size(); i++){
-        int colum ;
+    for (int i = 0; i < CS.size(); i++) {
+        int colum;
 
-        if (test[0] < g_L){
+        if (test[0] < g_L) {
             colum = test[0] + g_L;
-        } else{
+        } else {
             colum = test[0] - g_L;
         }
 
-        if((sizequery >  1) and (CS[i][colum] != 0) and (CS[i][test[1]] != 0) or
-           (sizequery == 1) and (CS[i][colum] != 0)){
+        if ((sizequery > 1) and (CS[i][colum] != 0) and (CS[i][test[1]] != 0) or
+                                                        (sizequery == 1) and (CS[i][colum] != 0)) {
 
             prepre_estimate = prepre_estimate + CS[i][colum];
         }
     }
 
-    for (int i = 0; i<CS.size(); i++){
-        if(CS[i][test[0]] != 0){
+    for (int i = 0; i < CS.size(); i++) {
+        if (CS[i][test[0]] != 0) {
             pre_total = pre_total + CS[i][test[0]];
-            prepre_total = prepre_total + CS[i][g_L*2];
+            prepre_total = prepre_total + CS[i][g_L * 2];
         }
     }
 
-    out = prepre_estimate/pre_total * prepre_total;
+    out = prepre_estimate / pre_total * prepre_total;
 
     //asdfasdf
     //i = 0:
-        //uitlezen tabel
+    //uitlezen tabel
 
 /***********************************************
  * In + estimate:
  */
-    double pre_in = 0 ;
+    double pre_in = 0;
     double estimate = 0;
 
-    if(sizequery > 1){
-        for (int i = 0; i < CS.size(); i++){
+    if (sizequery >= 2) {
+        pre_in   =  precal_noIn(test[0], test[1]);
+        estimate =  precal_noIn(test[0], test[1]);
+
+        /*
+        for (int i = 0; i < CS.size(); i++) {
             int colum;
 
-            if (test[0] < g_L){
+            if (test[0] < g_L) {
                 colum = test[0] + g_L;
-            } else{
+            } else {
                 colum = test[0] - g_L;
             }
 
-            if(CS[i][colum] != 0 and CS[i][test[1]] != 0){
+            if (CS[i][colum] != 0 and CS[i][test[1]] != 0) {
                 pre_in += CS[i][colum];
                 estimate += CS[i][colum];
             }
         }
-    } else {
+        */
+    }else {
         for (int i = 0; i < CS.size(); i++){
 
             if(CS[i][test[0]] != 0 ){
@@ -340,7 +351,7 @@ cardStat SimpleEstimator::estimate(RPQTree *q) {
 
     //std::cout << "start: " << pre_in << ", ";
 
-    for (int i = 2; i < sizequery; i++) {
+    for (int i = 3; i < sizequery; i++) {
 
         int colum_back;
         double pre = 0;
