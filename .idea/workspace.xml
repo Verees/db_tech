@@ -88,8 +88,8 @@
           <file leaf-file-name="SimpleEvaluator.cpp" pinned="false" current-in-tab="true">
             <entry file="file://$PROJECT_DIR$/src/SimpleEvaluator.cpp">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="790">
-                  <caret line="137" column="42" lean-forward="false" selection-start-line="137" selection-start-column="30" selection-end-line="137" selection-end-column="42" />
+                <state relative-caret-position="756">
+                  <caret line="135" column="35" lean-forward="true" selection-start-line="135" selection-start-column="35" selection-end-line="135" selection-end-column="35" />
                   <folding>
                     <element signature="e#53#81#0" expanded="true" />
                   </folding>
@@ -347,12 +347,12 @@
       <workItem from="1520705556473" duration="380000" />
       <workItem from="1520705960680" duration="5614000" />
       <workItem from="1520724657829" duration="5386000" />
-      <workItem from="1520764131737" duration="32960000" />
+      <workItem from="1520764131737" duration="33059000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="99622000" />
+    <option name="totallyTimeSpent" value="99721000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="54" y="-8" width="1874" height="1096" extended-state="6" />
@@ -833,8 +833,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/SimpleEvaluator.cpp">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="790">
-          <caret line="137" column="42" lean-forward="false" selection-start-line="137" selection-start-column="30" selection-end-line="137" selection-end-column="42" />
+        <state relative-caret-position="756">
+          <caret line="135" column="35" lean-forward="true" selection-start-line="135" selection-start-column="35" selection-end-line="135" selection-end-column="35" />
           <folding>
             <element signature="e#53#81#0" expanded="true" />
           </folding>
