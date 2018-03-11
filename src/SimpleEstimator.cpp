@@ -84,7 +84,7 @@ void SimpleEstimator::precal_prep() {
                 auto ev = std::make_unique<SimpleEvaluator>(graph);
                 ev->prepare();
                 //auto actual = ev->evaluate(queryTree);
-                cardstat actual = {0,0,0};
+                cardStat actual = {0,0,0};
 
                 //std::cout << "Actual (noOut, noPaths, noIn) : ";
                 //actual.print();
